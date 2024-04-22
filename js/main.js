@@ -19,17 +19,20 @@ $(function () {
 		speed: 300,
 		slidesToShow: 4,
 		slidesToScroll: 2,
-		
+
 		responsive: [{
-			breakpoint: 600, // ブレイクポイントを指定
+			breakpoint: 960,
 			settings: {
 				arrows: false,
 				autoplay: true,
 				autoplaySpeed: 3000,
-				slidesToScroll: 1,
+				slidesToScroll: 2,
 				infinite: true,
+			},
+			breakpoint: 600,
+			settings: {
+				slidesToScroll: 1,
 				slidesToShow: 3,
-				speed: 300,
 			},
 		},
 		]

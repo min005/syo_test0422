@@ -63,7 +63,7 @@ header nav ul li a:hover {
 .slides-wrapper {
     width: 100%;
     display: flex;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: auto;
 }
 
@@ -799,7 +799,7 @@ input[name="tab_switch"] {
     position: relative;
 }
 
-#thank_you::after{
+#thank_you::after {
     content: "";
     display: block;
     width: 100%;
@@ -850,6 +850,6 @@ input[name="tab_switch"] {
     margin: 5rem auto auto auto;
 }
 
-.back_btn:hover{
+.back_btn:hover {
     color: #FF2200;
 }
