@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(MI) SOLO EXHIBITION</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#top">TOP</a></li>
+                <li><a href="#foreword">FOREWORD</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+                <li class="pc_link"><a href="#gallery">GALLERY</a></li>
+                <li class="sp_link"><a href="#gallery_2">GALLERY</a></li>
+                <li><a href="#bookish">BOOKISH</a></li>
+                <li><a href="#mydad">MY DAD</a></li>
+                <li><a href="#guestbook">GUESTBOOK</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="slides-wrapper">
+        <section id="top" class="content top">
+            <h1><img class="top_logo" src="img/logo_white.png" alt="「み」のロゴ白"></h1>
+            <a href="#foreword"><img class="top_img top_foreword" src="img/top_foreword_new.png"
+                    alt="foreword イラスト"></a>
+            <a href="#aboutme"><img class="top_img top_aboutme" src="img/top_aboutme.png" alt="about me イラスト"></a>
+            <a href="#bookish"><img class="top_img top_bookish" src="img/top_bookish_new.png" alt="bookish イラスト"></a>
+            <a href="#mydad"><img class="top_img top_mydad" src="img/top_dad_new.png" alt="my dad イラスト"></a>
+            <a href="#gallery class=" pc_link""><img class="top_img top_gallery" src="img/top_gallery.png"
+                    alt="gallery イラスト"></a>
+            <a href="#gallery_2" sp_link><img class="top_img top_gallery" src="img/top_gallery.png"
+                    alt="gallery イラスト"></a>
+            <a href="#guestbook"><img class="top_img top_guestbook" src="img/top_guestbook.png"
+                    alt="guestbook イラスト"></a>
+            <div class="top_text">
+                <p>FOLLOW MI</p>
+                <a href="https://www.instagram.com/mi.fujikawa/"
+                    target="_blank">https://www.instagram.com/mi.fujikawa/</a>
+            </div>
+        </section>
+        <section id="foreword" class="content">
+            <div class="foreword_inner">
+                <h2><img src="img/logo_black.png" alt="「み」のロゴ黒"></h2>
+                <p class="foreword_text_ja">
+                    はじめに<br>
+                    私の作る、好きなもの欲しいもの。それを楽しみたいときに
+                    いつでも、どこからでも、すぐに集まるところになること。
+                    （み）の理想です。
+                </p>
+                <p class="foreword_text_en">
+                    foreword<br>
+                    TO GET TOGETHER PLACE I WANT & FAVORITE TO THEM
+                    IS THIS CONCEPT AND ALSO MY PLEASURE.
+                </p>
+            </div>
+        </section>
+        <section id="aboutme" class="content aboutme">
+            <h2>
+                <img src="img/aboutme_img.png" alt="aboutme イラスト">
+            </h2>
+            <div class="aboutme_text">
+                <p>
+                    MIYUKI<br>
+                    ４歳からずっと筆をもっています。<br>
+                    そして欲しいものはだいたい自分で作ってきました。作っている過程で思っていたのと違う、と気づいているのに、作り続けて結局のところものすごく愛着が深くなることが多く、この瞬間が一番好きで楽しんでいます。
+                </p>
+                <p>
+                    ABOUT ME<br>
+                    I'M MIYUKI. I’VE BEEN PICKING UP THE BRUSH SINCE AGE OF FOUR.
+                </p>
+            </div>
+        </section>
+        <div id="gallery" class="content gallery_section1">
+            <div class="modal_overlay" id="js-overlay"></div>
+            <div class="gallery_zoom" id="js-modal">
+                <div class="modal-close_wrap">
+                    <button class="modal-close" id="js-close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <img src="img/syo/syo01.jpg" alt="at conferenceroom">
+                <p class="gallery_zoom_title">at conferenceroom</p>
+            </div>
+            <div class="gallery_tabs">
+                <input id="tab01" type="radio" name="tab_switch" checked>
+                <label class="tab_label" for="tab01">SYO</label>
+                <input id="tab02" type="radio" name="tab_switch">
+                <label class="tab_label" for="tab02">ART</label>
+                <input id="tab03" type="radio" name="tab_switch">
+                <label class="tab_label" for="tab03">COOK</label>
+                <input id="tab04" type="radio" name="tab_switch">
+                <label class="tab_label" for="tab04">IKEBANA</label>
+                <div class="tab_content" id="tab01_content">
+                    <div class="item item01" id="js-open">
+                        <img src="img/syo/syo01.jpg" alt="at conferenceroom">
+                        <p class="gallery_title">at conferenceroom</p>
+                    </div>
+                    <div class="item item02">
+                        <img src="img/syo/syo02.jpg" alt="2*8">
+                        <p class="gallery_title">2*8</p>
+                    </div>
+                    <div class="item item03">
+                        <img src="img/syo/syo03.jpg" alt="2*8 No2">
+                        <p class="gallery_title">2*8 No2</p>
+                    </div>
+                    <div class="item item04">
+                        <img src="img/syo/syo04.jpg" alt="2*8 No3">
+                        <p class="gallery_title">2*8 No3</p>
+                    </div>
+                    <div class="item item05">
+                        <img src="img/syo/syo05.jpg" alt="2*8 No4">
+                        <p class="gallery_title">2*8 No4</p>
+                    </div>
+                    <div class="item item06">
+                        <img src="img/syo/syo06.jpg" alt="cosmos">
+                        <p class="gallery_title">cosmos</p>
+                    </div>
+                    <div class="item item07">
+                        <img src="img/syo/syo07.jpg" alt="calligraphy">
+                        <p class="gallery_title">calligraphy</p>
+                    </div>
+                    <div class="item item08">
+                        <img src="img/syo/syo08.jpg" alt="2*8 No5">
+                        <p class="gallery_title">2*8 No5</p>
+                    </div>
+                    <div class="item item09">
+                        <img src="img/syo/syo09.jpg" alt="happiness">
+                        <p class="gallery_title">happiness</p>
+                    </div>
+                    <div class="item item10">
+                        <img src="img/syo/syo10.jpg" alt="love">
+                        <p class="gallery_title">love</p>
+                    </div>
+                    <div class="item item11">
+                        <img src="img/syo/syo11.jpg" alt="lunch box">
+                        <p class="gallery_title">lunch box</p>
+                    </div>
+                    <div class="item item12">
+                        <img src="img/syo/syo12.jpg" alt="move">
+                        <p class="gallery_title">move</p>
+                    </div>
+                    <div class="item item13">
+                        <img src="img/syo/syo13.jpg" alt="newyears">
+                        <p class="gallery_title">newyears</p>
+                    </div>
+                    <div class="item item14">
+                        <img src="img/syo/syo14.jpg" alt="newyearscard">
+                        <p class="gallery_title">newyearscard</p>
+                    </div>
+                    <div class="item item15">
+                        <img src="img/syo/syo15.jpg" alt="older">
+                        <p class="gallery_title">older</p>
+                    </div>
+                    <div class="item item16">
+                        <img src="img/syo/syo16.jpg" alt="open">
+                        <p class="gallery_title">open</p>
+                    </div>
+                    <div class="item item17">
+                        <img src="img/syo/syo17.jpg" alt="sanma">
+                        <p class="gallery_title">sanma</p>
+                    </div>
+                    <div class="item item18">
+                        <img src="img/syo/syo18.jpg" alt="play">
+                        <p class="gallery_title">play</p>
+                    </div>
+                    <div class="item item19">
+                        <img src="img/syo/syo19.jpg" alt="spring is coming">
+                        <p class="gallery_title">spring is coming</p>
+                    </div>
+                    <div class="item item20">
+                        <img src="img/syo/syo20.jpg" alt="summer card">
+                        <p class="gallery_title">summer card</p>
+                    </div>
+                    <div class="item item21">
+                        <img src="img/syo/syo21.jpg" alt="summer">
+                        <p class="gallery_title">summer</p>
+                    </div>
+                    <div class="item item22">
+                        <img src="img/syo/syo22.jpg" alt="ume">
+                        <p class="gallery_title">ume</p>
+                    </div>
+                    <div class="item item23">
+                        <img src="img/syo/syo23.jpg" alt="super">
+                        <p class="gallery_title">super</p>
+                    </div>
+                    <div class="item item24">
+                        <img src="img/syo/syo24.jpg" alt="wagenaigo">
+                        <p class="gallery_title">wagenaigo</p>
+                    </div>
+                    <div class="item item25">
+                        <img src="img/syo/syo25.jpg" alt="yakiimo">
+                        <p class="gallery_title">yakiimo</p>
+                    </div>
+                    <div class="item item26">
+                        <img src="img/syo/syo26.jpg" alt="you tube">
+                        <p class="gallery_title">you tube</p>
+                    </div>
+                    <div class="item item27">
+                        <img src="img/syo/syo27.jpg" alt="なんくるないさ">
+                        <p class="gallery_title">なんくるないさ</p>
+                    </div>
+                    <div class="item item28">
+                        <img src="img/syo/syo28.jpg" alt="の">
+                        <p class="gallery_title">の</p>
+                    </div>
+                    <div class="item item29">
+                        <img src="img/syo/syo29.jpg" alt="のし">
+                        <p class="gallery_title">のし</p>
+                    </div>
+                    <div class="item item30">
+                        <img src="img/syo/syo30.jpg" alt="ひとくち">
+                        <p class="gallery_title">ひとくち</p>
+                    </div>
+                    <div class="item item31">
+                        <img src="img/syo/syo31.jpg" alt="猿">
+                        <p class="gallery_title">猿</p>
+                    </div>
+                    <div class="item item32">
+                        <img src="img/syo/syo32.jpg" alt="ほんの気持ち">
+                        <p class="gallery_title">ほんの気持ち</p>
+                    </div>
+                    <div class="item item33">
+                        <img src="img/syo/syo33.jpg" alt="ぶたまん">
+                        <p class="gallery_title">ぶたまん</p>
+                    </div>
+                    <div class="item item34">
+                        <img src="img/syo/syo34.jpg" alt="縁">
+                        <p class="gallery_title">縁</p>
+                    </div>
+                    <div class="item item35">
+                        <img src="img/syo/syo35.jpg" alt="夏色">
+                        <p class="gallery_title">夏色</p>
+                    </div>
+                    <div class="item item36">
+                        <img src="img/syo/syo36.jpg" alt="結">
+                        <p class="gallery_title">結</p>
+                    </div>
+                    <div class="item item37">
+                        <img src="img/syo/syo37.jpg" alt="寿">
+                        <p class="gallery_title">寿</p>
+                    </div>
+                    <div class="item item38">
+                        <img src="img/syo/syo38.jpg" alt="熟達">
+                        <p class="gallery_title">熟達</p>
+                    </div>
+                    <div class="item item39">
+                        <img src="img/syo/syo39.jpg" alt="体験">
+                        <p class="gallery_title">体験</p>
+                    </div>
+                    <div class="item item40">
+                        <img src="img/syo/syo40.jpg" alt="ひとくち">
+                        <p class="gallery_title">ひとくち</p>
+                    </div>
+                    <div class="item item41">
+                        <img src="img/syo/syo41.jpg" alt="涼">
+                        <p class="gallery_title">涼</p>
+                    </div>
+                    <div class="item item42">
+                        <img src="img/syo/syo42.jpg" alt="命名">
+                        <p class="gallery_title">命名</p>
+                    </div>
+                </div>
+                <div class="tab_content art" id="tab02_content">
+                    <div class="item item01">
+                        <img src="img/art/art01.jpg" alt="Candy pouch">
+                        <p class="gallery_title">Candy pouch</p>
+                    </div>
+                    <div class="item item02">
+                        <img src="img/art/art02.jpg" alt="concrete paste">
+                        <p class="gallery_title">concrete paste</p>
+                    </div>
+                    <div class="item item03">
+                        <img src="img/art/art03.jpg" alt="concretestool">
+                        <p class="gallery_title">concretestool</p>
+                    </div>
+                    <div class="item item04">
+                        <img src="img/art/art04.jpg" alt="coolshot">
+                        <p class="gallery_title">coolshot</p>
+                    </div>
+                    <div class="item item05">
+                        <img src="img/art/art05.jpg" alt="CORONAMASK">
+                        <p class="gallery_title">CORONAMASK</p>
+                    </div>
+                    <div class="item item06">
+                        <img src="img/art/art06.jpg" alt="display">
+                        <p class="gallery_title">display</p>
+                    </div>
+                    <div class="item item07">
+                        <img src="img/art/art07.jpg" alt="fit">
+                        <p class="gallery_title">fit</p>
+                    </div>
+                    <div class="item item08">
+                        <img src="img/art/art08.jpg" alt="hair design">
+                        <p class="gallery_title">hair design</p>
+                    </div>
+                    <div class="item item09">
+                        <img src="img/art/art09.jpg" alt="hair design 2">
+                        <p class="gallery_title">hair design 2</p>
+                    </div>
+                    <div class="item item10">
+                        <img src="img/art/art10.jpg" alt="hat">
+                        <p class="gallery_title">hat</p>
+                    </div>
+                    <div class="item item11">
+                        <img src="img/art/art11.jpg" alt="met her">
+                        <p class="gallery_title">met her</p>
+                    </div>
+                    <div class="item item12">
+                        <img src="img/art/art12.jpg" alt="M">
+                        <p class="gallery_title">M</p>
+                    </div>
+                    <div class="item item13">
+                        <img src="img/art/art13.jpg" alt="my uncle">
+                        <p class="gallery_title">my uncle</p>
+                    </div>
+                    <div class="item item14">
+                        <img src="img/art/art14.jpg" alt="origami">
+                        <p class="gallery_title">origami</p>
+                    </div>
+                    <div class="item item15">
+                        <img src="img/art/art15.jpg" alt="panda">
+                        <p class="gallery_title">panda</p>
+                    </div>
+                    <div class="item item16">
+                        <img src="img/art/art16.jpg" alt="pen">
+                        <p class="gallery_title">pen</p>
+                    </div>
+                    <div class="item item17">
+                        <img src="img/art/art17.jpg" alt="plate">
+                        <p class="gallery_title">plate</p>
+                    </div>
+                    <div class="item item18">
+                        <img src="img/art/art18.jpg" alt="sign">
+                        <p class="gallery_title">sign</p>
+                    </div>
+                    <div class="item item19">
+                        <img src="img/art/art19.jpg" alt="suwan">
+                        <p class="gallery_title">suwan</p>
+                    </div>
+                    <div class="item item20">
+                        <img src="img/art/art20.jpg" alt="umi">
+                        <p class="gallery_title">umi</p>
+                    </div>
+                    <div class="item item21">
+                        <img src="img/art/art21.jpg" alt="ちゃんちゃんこ">
+                        <p class="gallery_title">ちゃんちゃんこ</p>
+                    </div>
+                    <div class="item item22">
+                        <img src="img/art/art22.jpg" alt="スクリーンショット ">
+                        <p class="gallery_title">スクリーンショット </p>
+                    </div>
+                    <div class="item item23">
+                        <img src="img/art/art23.jpg" alt="冬支度">
+                        <p class="gallery_title">冬支度</p>
+                    </div>
+                    <div class="item item24">
+                        <img src="img/art/art24.jpg" alt="孔子ice cream">
+                        <p class="gallery_title">孔子ice cream</p>
+                    </div>
+                    <div class="item item25">
+                        <img src="img/art/art25.jpg" alt="美">
+                        <p class="gallery_title">美</p>
+                    </div>
+                    <div class="item item26">
+                        <img src="img/art/art26.jpg" alt="palm chair">
+                        <p class="gallery_title">palm chair</p>
+                    </div>
+                    <div class="item item27">
+                        <img src="img/art/art27.jpg" alt="もう一生お布団から出なくて良いテーブル">
+                        <p class="gallery_title">もう一生お布団から出なくて良いテーブル</p>
+                    </div>
+                </div>
+                <div class="tab_content cook" id="tab03_content">
+                    <div class="item item01">
+                        <img src="img/cook/cook01.jpg" alt="ChineseNO1">
+                        <p class="gallery_title">ChineseNO1</p>
+                    </div>
+                    <div class="item item02">
+                        <img src="img/cook/cook02.jpg" alt="ChineseNO2">
+                        <p class="gallery_title">ChineseNO2</p>
+                    </div>
+                    <div class="item item03">
+                        <img src="img/cook/cook03.jpg" alt="chocolate">
+                        <p class="gallery_title">chocolate</p>
+                    </div>
+                    <div class="item item04">
+                        <img src="img/cook/cook04.jpg" alt="christmas">
+                        <p class="gallery_title">christmas</p>
+                    </div>
+                    <div class="item item05">
+                        <img src="img/cook/cook05.jpg" alt="coffee purine">
+                        <p class="gallery_title">coffee purine</p>
+                    </div>
+                    <div class="item item06">
+                        <img src="img/cook/cook06.jpg" alt="dangoNo2">
+                        <p class="gallery_title">dangoNo2</p>
+                    </div>
+                    <div class="item item07">
+                        <img src="img/cook/cook07.jpg" alt="dango">
+                        <p class="gallery_title">dango</p>
+                    </div>
+                    <div class="item item08">
+                        <img src="img/cook/cook08.jpg" alt="cookie">
+                        <p class="gallery_title">cookie</p>
+                    </div>
+                    <div class="item item09">
+                        <img src="img/cook/cook09.jpg" alt="kasiwa">
+                        <p class="gallery_title">kasiwa</p>
+                    </div>
+                    <div class="item item10">
+                        <img src="img/cook/cook10.jpg" alt="newyeardish">
+                        <p class="gallery_title">newyeardish</p>
+                    </div>
+                    <div class="item item11">
+                        <img src="img/cook/cook11.jpg" alt="sanma">
+                        <p class="gallery_title">sanma</p>
+                    </div>
+                    <div class="item item12">
+                        <img src="img/cook/cook12.jpg" alt="sandwich">
+                        <p class="gallery_title">sandwich</p>
+                    </div>
+                    <div class="item item13">
+                        <img src="img/cook/cook13.jpg" alt="paella">
+                        <p class="gallery_title">paella</p>
+                    </div>
+                    <div class="item item14">
+                        <img src="img/cook/cook14.jpg" alt="springparty">
+                        <p class="gallery_title">springparty</p>
+                    </div>
+                    <div class="item item15">
+                        <img src="img/cook/cook15.jpg" alt="おいなりさん">
+                        <p class="gallery_title">おいなりさん</p>
+                    </div>
+                    <div class="item item16">
+                        <img src="img/cook/cook16.jpg" alt="お吸い物">
+                        <p class="gallery_title">お吸い物</p>
+                    </div>
+                    <div class="item item17">
+                        <img src="img/cook/cook17.jpg" alt="ちくぜんに">
+                        <p class="gallery_title">ちくぜんに</p>
+                    </div>
+                    <div class="item item18">
+                        <img src="img/cook/cook18.jpg" alt="チャーハン">
+                        <p class="gallery_title">チャーハン</p>
+                    </div>
+                    <div class="item item19">
+                        <img src="img/cook/cook19.jpg" alt="マドレーヌ">
+                        <p class="gallery_title">マドレーヌ</p>
+                    </div>
+                    <div class="item item20">
+                        <img src="img/cook/cook20.jpg" alt="ふくさ寿司">
+                        <p class="gallery_title">ふくさ寿司</p>
+                    </div>
+                    <div class="item item21">
+                        <img src="img/cook/cook21.jpg" alt="パン">
+                        <p class="gallery_title">パン</p>
+                    </div>
+                    <div class="item item22">
+                        <img src="img/cook/cook22.jpg" alt="黒豆たいたん">
+                        <p class="gallery_title">黒豆たいたん </p>
+                    </div>
+                    <div class="item item23">
+                        <img src="img/cook/cook23.jpg" alt="行楽セット">
+                        <p class="gallery_title">行楽セット</p>
+                    </div>
+                    <div class="item item24">
+                        <img src="img/cook/cook24.jpg" alt="新春">
+                        <p class="gallery_title">新春</p>
+                    </div>
+                    <div class="item item25">
+                        <img src="img/cook/cook25.jpg" alt="茶碗蒸し">
+                        <p class="gallery_title">茶碗蒸し</p>
+                    </div>
+                </div>
+                <div class="tab_content ikebana" id="tab04_content">
+                    <div class="item item01">
+                        <img src="img/ikebana/ikebana01.jpg" alt="christmas">
+                        <p class="gallery_title">christmas</p>
+                    </div>
+                    <div class="item item02">
+                        <img src="img/ikebana/ikebana02.jpg" alt="christmas lease">
+                        <p class="gallery_title">christmas lease</p>
+                    </div>
+                    <div class="item item03">
+                        <img src="img/ikebana/ikebana03.jpg" alt="No1">
+                        <p class="gallery_title">No1</p>
+                    </div>
+                    <div class="item item04">
+                        <img src="img/ikebana/ikebana04.jpg" alt="No2">
+                        <p class="gallery_title">No2</p>
+                    </div>
+                    <div class="item item05">
+                        <img src="img/ikebana/ikebana05.jpg" alt="No3">
+                        <p class="gallery_title">No4</p>
+                    </div>
+                    <div class="item item06">
+                        <img src="img/ikebana/ikebana06.jpg" alt="No6">
+                        <p class="gallery_title">No6</p>
+                    </div>
+                    <div class="item item07">
+                        <img src="img/ikebana/ikebana07.jpg" alt="No5">
+                        <p class="gallery_title">No5</p>
+                    </div>
+                    <div class="item item08">
+                        <img src="img/ikebana/ikebana08.jpg" alt="No4">
+                        <p class="gallery_title">No4</p>
+                    </div>
+                    <div class="item item09">
+                        <img src="img/ikebana/ikebana09.jpg" alt="No7">
+                        <p class="gallery_title">No7</p>
+                    </div>
+                    <div class="item item10">
+                        <img src="img/ikebana/ikebana10.jpg" alt="No8">
+                        <p class="gallery_title">No8</p>
+                    </div>
+                    <div class="item item11">
+                        <img src="img/ikebana/ikebana11.jpg" alt="No9">
+                        <p class="gallery_title">No9</p>
+                    </div>
+                    <div class="item item12">
+                        <img src="img/ikebana/ikebana12.jpg" alt="No10">
+                        <p class="gallery_title">No10</p>
+                    </div>
+                    <div class="item item13">
+                        <img src="img/ikebana/ikebana13.jpg" alt="No11">
+                        <p class="gallery_title">No11</p>
+                    </div>
+                    <div class="item item14">
+                        <img src="img/ikebana/ikebana14.jpg" alt="No12">
+                        <p class="gallery_title">No12</p>
+                    </div>
+                    <div class="item item15">
+                        <img src="img/ikebana/ikebana15.jpg" alt="No13">
+                        <p class="gallery_title">No13</p>
+                    </div>
+                    <div class="item item16">
+                        <img src="img/ikebana/ikebana16.jpg" alt="No14">
+                        <p class="gallery_title">No14</p>
+                    </div>
+                    <div class="item item17">
+                        <img src="img/ikebana/ikebana17.jpg" alt="No16">
+                        <p class="gallery_title">No16</p>
+                    </div>
+                    <div class="item item18">
+                        <img src="img/ikebana/ikebana18.jpg" alt="No15">
+                        <p class="gallery_title">No15</p>
+                    </div>
+                    <div class="item item19">
+                        <img src="img/ikebana/ikebana19.jpg" alt="No18">
+                        <p class="gallery_title">No18</p>
+                    </div>
+                    <div class="item item20">
+                        <img src="img/ikebana/ikebana20.jpg" alt="No19">
+                        <p class="gallery_title">No19</p>
+                    </div>
+                    <div class="item item21">
+                        <img src="img/ikebana/ikebana21.jpg" alt="No17">
+                        <p class="gallery_title">No17</p>
+                    </div>
+                    <div class="item item22">
+                        <img src="img/ikebana/ikebana22.jpg" alt="No20 ">
+                        <p class="gallery_title">No20</p>
+                    </div>
+                    <div class="item item23">
+                        <img src="img/ikebana/ikebana23.jpg" alt="No21">
+                        <p class="gallery_title">No21</p>
+                    </div>
+                    <div class="item item24">
+                        <img src="img/ikebana/ikebana24.jpg" alt="No22">
+                        <p class="gallery_title">No22</p>
+                    </div>
+                    <div class="item item25">
+                        <img src="img/ikebana/ikebana25.jpg" alt="No23">
+                        <p class="gallery_title">No23</p>
+                    </div>
+                    <div class="item item26">
+                        <img src="img/ikebana/ikebana26.jpg" alt="No24">
+                        <p class="gallery_title">No24</p>
+                    </div>
+                    <div class="item item27">
+                        <img src="img/ikebana/ikebana27.jpg" alt="No25">
+                        <p class="gallery_title">No25</p>
+                    </div>
+                    <div class="item item28">
+                        <img src="img/ikebana/ikebana28.jpg" alt="No26">
+                        <p class="gallery_title">No26</p>
+                    </div>
+                    <div class="item item29">
+                        <img src="img/ikebana/ikebana29.jpg" alt="No27">
+                        <p class="gallery_title">No27</p>
+                    </div>
+                    <div class="item item30">
+                        <img src="img/ikebana/ikebana30.jpg" alt="No28">
+                        <p class="gallery_title">No28</p>
+                    </div>
+                    <div class="item item31">
+                        <img src="img/ikebana/ikebana31.jpg" alt="No31">
+                        <p class="gallery_title">No31</p>
+                    </div>
+                    <div class="item item32">
+                        <img src="img/ikebana/ikebana32.jpg" alt="No30">
+                        <p class="gallery_title">No30</p>
+                    </div>
+                    <div class="item item33">
+                        <img src="img/ikebana/ikebana33.jpg" alt="No29">
+                        <p class="gallery_title">No29</p>
+                    </div>
+                    <div class="item item34">
+                        <img src="img/ikebana/ikebana34.jpg" alt="No32">
+                        <p class="gallery_title">No32</p>
+                    </div>
+                    <div class="item item35">
+                        <img src="img/ikebana/ikebana35.jpg" alt="tsubaki">
+                        <p class="gallery_title">tsubaki</p>
+                    </div>
+                    <div class="item item36 ikebana36">
+                        <img src="img/ikebana/ikebana36.jpg" alt="さくら">
+                        <p class="gallery_title">さくら</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gallery_2" class="content gallery_section2">
+        </div>
+        <div id="bookish" class="content bookish">
+            <a href="https://note.com/mi_bookish/" target="_blank">
+                <img src="img/bookish_img.png" alt="bookish イラスト">
+            </a>
+        </div>
+        <div id="mydad" class="content mydad">
+            <div class="mydad_main">
+                <img class="mydad_main_img" src="img/mydad04.jpg" alt="メイン画像">
+            </div>
+            <ul class="mydad_sub_img slide-items">
+                <li><img src="img/mydad04.jpg" alt="mydad画像04"></li>
+                <li><img src="img/mydad02.jpg" alt="mydad画像02"></li>
+                <li><img src="img/mydad03.jpg" alt="mydad画像03"></li>
+                <li><img src="img/mydad01.jpg" alt="mydad画像01"></li>
+                <li><img src="img/mydad05.jpg" alt="mydad画像05"></li>
+                <li><img src="img/mydad06.jpg" alt="mydad画像06"></li>
+            </ul>
+        </div>
+        <div id="guestbook" class="content guestbook">
+            <div class="guestbook_inner">
+                <div class="guestbook_text">
+                    <p>
+                        さいごまで見ていただきありがとうございます。<br>
+                        心より感謝します。<br>
+                        ここに名前とメッセージを入力いただけると大変励みになります。
+                    </p>
+                    <p>
+                        THANK YOU FOR VIEWING TILL THE END.<br>
+                        IT WOULD BE HELPFUL IF YOU COULD WRITE YOUR NAME AND MESSAGE HERE.
+                    </p>
+                </div>
+                <form class="message_box" action="contact.php" method="post">
+                    <label for="name" class="name_label">name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="message" class="message_label">message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
