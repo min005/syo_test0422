@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+@media screen and (max-width:959px) {
+    .top a.pc_link {
+        display: none;
+    }
+
+    .top a.sp_link {
+        display: block;
+    }
+
+    .top_gallery,
+    .top_guestbook {
+        top: 20%;
+    }
+
+    .top_aboutme {
+        top: 13%;
+    }
+
+    .top_bookish,
+    .top_mydad {
+        bottom: 20%;
+    }
+
+    .top_foreword {
+        bottom: 13%;
+    }
+
+    #aboutme {
+        background-size: 60%, cover;
+    }
+
+    .bookish a {
+        bottom: 18%;
+    }
+
+    /*==========max-width:959px==========*/
+}
+
+
+@media screen and (max-width:767px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    header nav {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header nav ul {
+        margin: 3vh 0 0 0;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 3vh;
+    }
+
+    header nav ul li.pc_link {
+        display: none;
+    }
+
+    header nav ul li.sp_link {
+        display: block;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        padding: 0 5px;
+    }
+
+    h1{
+        width: 37%;
+    }
+
+    .top_img {
+        width: 26.7%;
+    }
+
+    .top_gallery,
+    .top_guestbook {
+        top: 25%;
+    }
+
+    .top_aboutme {
+        top: 18%;
+        left: 36%;
+    }
+
+    .top_bookish,
+    .top_mydad {
+        bottom: 23%;
+    }
+
+    .top_foreword {
+        bottom: 14%;
+        left: 37%;
+    }
+
+    .foreword_inner {
+        width: 100%;
+    }
+
+    .foreword_inner h2 {
+        width: 50%;
+    }
+
+    .foreword_inner p {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin: 3rem 3rem auto 3rem;
+        line-height: 1.4;
+    }
+
+    .foreword_inner p:last-of-type {
+        letter-spacing: 0.1rem;
+    }
+
+    #aboutme {
+        background-image: url(../img/bg03.jpg);
+        background-size: cover;
+    }
+
+    .aboutme h2 {
+        width: 86%;
+        text-align: center;
+        margin: 12vh auto 3vh auto;
+    }
+
+    .aboutme_text {
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .aboutme_text p {
+        line-height: 1.4;
+        margin-left: 0;
+    }
+
+    .aboutme_text p:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    .aboutme_text p:last-of-type {
+        letter-spacing: 0.1rem;
+    }
+
+    #gallery {
+        background-image: url(../img/aboutme_syo.png), url(../img/bg04.jpg);
+        background-size: contain, cover;
+        background-position: bottom right, top center;
+        width: 100%;
+    }
+
+    .gallery_zoom {
+        display: none;
+        width: 75%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 180;
+    }
+
+    .modal_overlay {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 150;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    .modal_overlay.open {
+        display: block;
+    }
+
+    .modal-close_wrap {
+        position: absolute;
+        right: 0px;
+        top: -30px;
+    }
+
+    .modal-close {
+        background: transparent;
+        border-color: transparent;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        width: 28px;
+        display: block;
+        height: 28px;
+        z-index: 200;
+    }
+
+    .modal-close span {
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        display: block;
+    }
+
+    .modal-close span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .modal-close span:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    .gallery_tabs {
+        width: 100%;
+        position: absolute;
+        bottom: 3vh;
+        right: -100%;
+        justify-content: space-around;
+    }
+
+    .tab_label {
+        margin-left: 0;
+        z-index: 50;
+    }
+
+    .tab_label:first-of-type {
+        margin-left: 0;
+    }
+
+    #gallery::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 10vh;
+        z-index: 40;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .tab_content {
+        width: 95%;
+        height: 600vh;
+        z-index: 30;
+    }
+
+    .tab_content.art,
+    .tab_content.cook {
+        height: 360vh;
+    }
+
+    .tab_content.ikebana {
+        height: 540vh;
+    }
+
+    #tab01:checked~#tab01_content, #tab02:checked~#tab02_content, #tab03:checked~#tab03_content, #tab04:checked~#tab04_content {
+        right: 5px;
+        top: -95vh;
+    }
+
+    .tab_label {
+        font-size: 1rem;
+    }
+
+    .item {
+        padding: .5rem .5rem;
+    }
+
+    .item .gallery_title {
+        font-size: 0.5rem;
+    }
+
+    .item01,
+    .item02 {
+        top: 18vh;
+    }
+
+    .item03 {
+        top: 16vh;
+    }
+
+    .item04 {
+        top: 35vh;
+    }
+
+    .item05 {
+        top: 37vh;
+    }
+
+    .item06 {
+        top: 65vh;
+    }
+
+    .item07 {
+        top: 64vh;
+    }
+
+    .item08 {
+        top: 60vh;
+    }
+
+    .item09 {
+        top: 85vh;
+    }
+
+    .item10 {
+        top: 80vh;
+    }
+
+    .item11 {
+        top: 105vh;
+    }
+
+    .item12 {
+        top: 108vh;
+    }
+
+    .item13 {
+        top: 108vh;
+    }
+
+    .item14 {
+        top: 130vh;
+    }
+
+    .item15 {
+        top: 135vh;
+    }
+
+    .item16 {
+        top: 160vh;
+    }
+
+    .item17 {
+        top: 168vh;
+    }
+
+    .item18 {
+        top: 163vh;
+    }
+
+    .item19 {
+        top: 182vh;
+    }
+
+    .item20 {
+        top: 192vh;
+    }
+
+    .item21 {
+        top: 192vh;
+    }
+
+    .item22 {
+        top: 218vh;
+    }
+
+    .item23 {
+        top: 216vh;
+    }
+
+    .item24 {
+        top: 250vh;
+    }
+
+    .item25 {
+        top: 246vh;
+    }
+
+    .item26 {
+        top: 273vh;
+    }
+
+    .item27 {
+        top: 273vh;
+    }
+
+    .item28 {
+        top: 273vh;
+    }
+
+    .item29 {
+        top: 289vh;
+    }
+
+    .item30 {
+        top: 293vh;
+    }
+
+    .item31 {
+        top: 316vh;
+    }
+
+    .item32 {
+        top: 316vh;
+    }
+
+    .item33 {
+        top: 312vh;
+    }
+
+    .item34 {
+        top: 335vh;
+    }
+
+    .item35 {
+        top: 332vh;
+    }
+
+    .item36 {
+        top: 355vh;
+    }
+
+    .item37 {
+        top: 360vh;
+    }
+
+    .item38 {
+        top: 360vh;
+    }
+
+    .item39 {
+        top: 380vh;
+    }
+
+    .item40 {
+        top: 387vh;
+    }
+
+    .item41 {
+        top: 420vh;
+    }
+
+    .item42 {
+        top: 418vh;
+    }
+
+    .bookish a {
+        width: 95%;
+        bottom: 25%;
+        left: 0;
+    }
+
+    #mydad {
+        background-position: bottom center;
+    }
+
+    .mydad_main {
+        height: 45vh;
+        margin-top: 18vh;
+    }
+
+    .mydad_sub_img {
+        width: 100%;
+        height: 12vh;
+        margin-top: 7vh;
+    }
+
+    .guestbook_inner {
+        flex-direction: column;
+        margin-right: auto;
+        margin-top: 18vh;
+    }
+
+    .guestbook_text {
+        width: 75%;
+    }
+
+    .guestbook_text p:first-of-type {
+        margin-bottom: 2vh;
+        line-height: 1.4;
+    }
+
+    .message_box {
+        width: 75%;
+        height: 380px;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    .message_box label {
+        padding-top: 2rem;
+    }
+
+    .message_label {
+        margin-top: 2rem;
+    }
+
+    .message_box button {
+        margin-top: 3rem;
+    }
+
+
+    /*==========max-width:767px==========*/
+}
+
+@media screen and (max-width:599px) {
+
+    .mydad_sub_img li {
+        height: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+
+/*==========max-width:599px==========*/
+}
+
+@media screen and (min-width: 768px) and (max-height: 919px) {
+
+    h1 {
+        width: 20%;
+    }
+
+    .top_img {
+        width: 15%;
+    }
+
+    .top_aboutme {
+        top: 12%;
+        left: 42%;
+    }
+
+    .top_foreword {
+        bottom: 10%;
+        left: 43%;
+    }
+
+    .foreword_inner h2 {
+        width: 60%;
+    }
+
+    .aboutme h2 {
+        width: 40%;
+    }
+
+    .gallery_zoom {
+        width: 35%;
+        left: 22%;
+    }
+
+    .bookish a {
+        width: 85%;
+    }
+
+    .mydad_main {
+        width: 60%;
+    }
+
+    .mydad_sub_img {
+        width: 70%;
+    }
+}
