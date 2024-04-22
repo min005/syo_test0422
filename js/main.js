@@ -7,6 +7,12 @@ $(function () {
 		e.preventDefault();
 		scrollElement.scrollLeft += e.deltaY;
 	});
+	
+	scrollElement.addEventListener("touchmove", (e) => {
+		if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
+		e.preventDefault();
+		scrollElement.scrollLeft += e.deltaY;
+	});
 });
 
 
