@@ -9,30 +9,17 @@
         display: block;
     }
 
-    .top_gallery,
-    .top_guestbook {
-        top: 20%;
-    }
-
-    .top_aboutme {
-        top: 13%;
-    }
-
-    .top_bookish,
-    .top_mydad {
-        bottom: 20%;
-    }
-
-    .top_foreword {
-        bottom: 13%;
-    }
-
     #aboutme {
         background-size: 60%, cover;
     }
 
     .bookish a {
         bottom: 18%;
+    }
+
+    .mydad_sub_img li {
+        margin-right: 8px;
+        margin-left: 8px;
     }
 
     /*==========max-width:959px==========*/
@@ -75,7 +62,7 @@
         padding: 0 5px;
     }
 
-    h1{
+    h1 {
         width: 37%;
     }
 
@@ -465,7 +452,10 @@
         width: 100%;
         height: 12vh;
         margin-top: 7vh;
+        padding-left: 0;
+        padding-right: 0;
     }
+
 
     .guestbook_inner {
         flex-direction: column;
@@ -512,29 +502,40 @@
         margin-right: 5px;
         margin-left: 5px;
     }
-    
 
-/*==========max-width:599px==========*/
+
+    /*==========max-width:599px==========*/
+}
+
+@media screen and (min-width: 960px) and (max-height: 1023px) {
+    h1 {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-height: 923px) {
+    h1 {
+        width: 25%;
+    }
+
+    .top_img {
+        width: 22%;
+    }
+
+    .top_aboutme {
+        left: 38%;
+    }
+
+    .top_foreword {
+        left: 39%;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-height: 919px) {
 
     h1 {
-        width: 20%;
-    }
-
-    .top_img {
-        width: 15%;
-    }
-
-    .top_aboutme {
-        top: 12%;
-        left: 42%;
-    }
-
-    .top_foreword {
-        bottom: 10%;
-        left: 43%;
+        width: 22%;
     }
 
     .foreword_inner h2 {
