@@ -3,7 +3,7 @@ mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
 if ($_POST) {
-    $to = 'xxxxxx@gmail.com';
+    $to = 'moshimosshi.she202208@gmail.com';
     // $to = 'miyuki.f1986@gmail.com';
 
     $subject = 'メッセージが届きました';
