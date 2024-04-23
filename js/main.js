@@ -4,6 +4,7 @@ $(function () {
 	let touchStartY = 0;
 	let touchStartX = 0;
 	let isScrolling = false;
+	let requestId;
 
 	// タッチデバイス用のイベントリスナー
 	scrollElement.addEventListener("touchstart", (e) => {
@@ -25,7 +26,7 @@ $(function () {
 
 		e.preventDefault();
 		// 移動量をスケール調整
-		const scrollAmount = deltaX * 6; // スクロール速度を調整
+		const scrollAmount = deltaY * 1.5; // スクロール速度を調整
 		scrollElement.scrollLeft -= scrollAmount;
 
 		// タッチ開始位置を更新
@@ -42,6 +43,26 @@ $(function () {
 		e.preventDefault();
 		scrollElement.scrollLeft += e.deltaY;
 	});
+
+	// スムーズなスクロール関数
+	function smoothScroll() {
+		scrollElement.scrollLeft += (targetScroll - scrollElement.scrollLeft) / 8; // 8はスムージング係数
+		if (Math.abs(targetScroll - scrollElement.scrollLeft) < 1) {
+			cancelAnimationFrame(requestId);
+		} else {
+			requestId = requestAnimationFrame(smoothScroll);
+		}
+	}
+
+	// タッチデバイスとマウスホイールのスクロール処理を統一して、スムーズなスクロールを行う
+	let targetScroll = 0;
+	scrollElement.addEventListener("wheel", (e) => {
+		e.preventDefault();
+		targetScroll += e.deltaY;
+		if (!requestId) {
+			requestId = requestAnimationFrame(smoothScroll);
+		}
+	});
 });
 
 
@@ -50,11 +71,13 @@ $(function () {
 $(function () {
 
 	$(".mydad_sub_img").slick({
-		infinite: false,
-		arrows: true,
-		speed: 300,
+		infinite: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 0,
+		speed: 8000,
+		cssEase: 'linear',
 		slidesToShow: 4,
-		slidesToScroll: 2,
 		responsive: [{
 			breakpoint: 960,
 			settings: {
@@ -63,7 +86,6 @@ $(function () {
 				autoplaySpeed: 0,
 				speed: 8000,
 				cssEase: 'linear',
-				slidesToScroll: 2,
 				infinite: true
 			}
 		}, {
@@ -74,7 +96,6 @@ $(function () {
 				autoplaySpeed: 0,
 				speed: 8000,
 				cssEase: 'linear',
-				slidesToScroll: 1,
 				slidesToShow: 3,
 				infinite: true
 			}
