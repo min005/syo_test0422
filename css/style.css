@@ -800,17 +800,6 @@ input[name="tab_switch"] {
     position: relative;
 }
 
-#thank_you::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-}
 
 .thank_you_inner {
     width: 335px;
