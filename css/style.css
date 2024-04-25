@@ -104,8 +104,9 @@ h1 {
 }
 
 .top_gallery {
+    width: 30%;
     top: 17%;
-    left: 3%;
+    left: 2%;
 }
 
 .top_aboutme {

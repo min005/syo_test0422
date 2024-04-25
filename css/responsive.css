@@ -74,7 +74,12 @@
         width: 26.7%;
     }
 
-    .top_gallery,
+    .top_gallery{
+        width: 30%;
+        top: 25%;
+        left: 1%;
+    }
+
     .top_guestbook {
         top: 25%;
     }
@@ -521,6 +526,10 @@
 
     .top_img {
         width: 22%;
+    }
+
+    .top_gallery{
+        width: 25%;
     }
 
     .top_aboutme {
